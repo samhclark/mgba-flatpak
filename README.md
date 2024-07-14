@@ -1,5 +1,11 @@
 # mGBA Flatpak
 
-An attempt at putting mGBA in a Flatpak.
+Don't use this. 
 
-The existing one sketches me out, so hoping this will be easier. 
+Use [the existing one](https://flathub.org/apps/io.mgba.mGBA) and then lock it down with [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal). 
+
+```shell
+$ flatpak install flathub io.mgba.mGBA
+```
+
+You can disable everything besides Wayland and PulseAudio, then enable GPU acceleration and input devices.
