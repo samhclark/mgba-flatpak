@@ -23,6 +23,7 @@ modules:
       - -DUSE_DISCORD_RPC=OFF
     build-commands:
       - install -Dm644 com.samhclark.io.mgba.mgba.metainfo.xml /app/share/appdata/com.samhclark.io.mgba.mgba.metainfo.xml
+      - install -Dm644 com.samhclark.io.mgba.mgba.png /app/share/icons/hicolor/128x128/apps/com.samhclark.io.mgba.mgba.png
     sources:
       - type: file 
         path: com.samhclark.io.mgba.mgba.metainfo.xml
