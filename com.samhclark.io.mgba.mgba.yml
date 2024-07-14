@@ -32,5 +32,3 @@ modules:
       - type: archive
         url: https://github.com/mgba-emu/mgba/archive/0.10.3.tar.gz
         sha256: "be2cda7de3da8819fdab0c659c5cd4c4b8ca89d9ecddeeeef522db6d31a64143"
-      - type: patch
-        path: 3a3ebb5d.patch
