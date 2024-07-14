@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=mGBA
+Comment=mGBA is a Game Boy Advance emulator
+Icon=com.samhclark.io.mgba.mgba
+Exec=mgba-qt
+Categories=Game;Emulator
+MimeType=application/x-gameboy-advance-rom;application/x-agb-rom;application/x-gba-rom;
+Keywords=emulator;Nintendo;advance;gba;Game Boy Advance;

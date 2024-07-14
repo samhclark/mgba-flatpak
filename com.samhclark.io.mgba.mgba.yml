@@ -1,0 +1,35 @@
+id: com.samhclark.io.mgba.mgba
+runtime: org.kde.Platform
+runtime-version: '5.15-23.08'
+sdk: org.kde.Sdk
+command: mgba-qt
+cleanup:
+  - /bin/mgba
+  - /include
+  - /share/doc
+  - /share/man
+finish-args:
+  - --device=dri
+  - --device=input
+  - --socket=pulseaudio
+  - --socket=wayland
+modules:
+  - "shared-modules/lua5.4/lua-5.4.json"
+  - name: mgba
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_INSTALL_LIBDIR=lib
+      - -DUSE_DISCORD_RPC=OFF
+    build-commands:
+      - install -Dm644 com.samhclark.io.mgba.mgba.metainfo.xml /app/share/appdata/com.samhclark.io.mgba.mgba.metainfo.xml
+    sources:
+      - type: file 
+        path: com.samhclark.io.mgba.mgba.metainfo.xml
+      - type: file 
+        path: com.samhclark.io.mgba.mgba.png
+      - type: archive
+        url: https://github.com/mgba-emu/mgba/archive/0.10.3.tar.gz
+        sha256: "be2cda7de3da8819fdab0c659c5cd4c4b8ca89d9ecddeeeef522db6d31a64143"
+      - type: patch
+        path: 3a3ebb5d.patch

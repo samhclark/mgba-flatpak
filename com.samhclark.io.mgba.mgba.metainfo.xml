@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.samhclark.io.mgba.mgba</id>
+  
+  <name>mGBA</name>
+  <summary>mGBA is a Game Boy Advance emulator</summary>
+
+  <url type="homepage">https://mgba.io/</url>
+
+  <developer id="io.github.endrift">
+    <name>Vicki Pfau</name>
+  </developer>
+  
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MPL-2.0</project_license>
+  
+  <description>
+    <p>
+      mGBA is a Game Boy and Game Boy Advance emulator which started in April 2013. It is fast and accurate with a modern feature set.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">com.samhclark.io.mgba.mgba.desktop</launchable>
+  
+  <icon type="stock">com.samhclark.io.mgba.mgba</icon>
+  
+  <categories>
+    <category>Game</category>
+    <category>Emulator</category>
+  </categories>
+
+  <content_rating type="oars-1.1" />
+  
+  <provides>
+    <binary>mgba-qt</binary>
+  </provides>
+</component>
